@@ -27,6 +27,32 @@ html, body {
     line-height: 5vw;
     font-weight: 100;
     letter-spacing: -3px;
+    position: relative;
+    z-index: 9;
+}
+
+#loader video {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 6;
+}
+
+#yellow1 {
+    height: 100%;
+    width: 100%;
+    background-color: #F5E41B;
+    position: absolute;
+    z-index: 8;
+}
+
+#yellow2 {
+    height: 100%;
+    width: 100%;
+    background-color: #F5E41B;
+    position: absolute;
+    z-index: 7;
 }
 
 #page1 {
