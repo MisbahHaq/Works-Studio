@@ -60,7 +60,7 @@ html, body {
     position: absolute;
     width: 100%;
     padding: 0 40px;
-    background-color: red;
+    /* background-color: red; */
     z-index: 10;
 }
 
