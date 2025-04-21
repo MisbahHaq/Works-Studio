@@ -20,6 +20,7 @@ html, body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    z-index: 99;
 }
 
 #loader h1 {
@@ -53,6 +54,22 @@ html, body {
     background-color: #F5E41B;
     position: absolute;
     z-index: 7;
+}
+
+#nav {
+    position: absolute;
+    width: 100%;
+    padding: 0 40px;
+    background-color: red;
+    z-index: 10;
+}
+
+#nav img {
+    width: 110;
+    height: 110;
+    max-height: 100px;
+    object-fit: contain;
+    display: block;
 }
 
 #page1 {
