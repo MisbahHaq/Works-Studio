@@ -107,31 +107,44 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     text-align: center;
 }
 
 .elem {
-    background-color: red;
     width: 100%;
     position: relative;
+    cursor: pointer;
 }
 
 .elem h2 {
-    font-size: 7vw;
+    font-size: 6.9vw;
     text-transform: uppercase;
     font-weight: 100;
+    line-height: 5vw;
+    position: relative;
+    z-index: 9;
 }
 
 .elem .moving {
     background-color: #F5E41B;
     width: 100%;
     white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -45%);
     padding: 8px 0;
+    transition: all ease 0.5s;
+    opacity: 0;
 }
 
 .elem .moving .moving-in {
     display: inline-block;
     white-space: nowrap;
+    animation: moving;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .elem .moving .moving-in h5 {
@@ -142,6 +155,19 @@ html, body {
     font-family: Gilroy;
     text-transform: uppercase;
     margin-right: 35px;
+}
+
+@keyframes moving {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.elem:hover .moving {
+    opacity: 1;
 }
 
 #page3 {
