@@ -295,7 +295,7 @@ body {
     }
 }
 
-/* #footer {
+#footer {
     height: 40vh;
     width: 100%;
     background-color: white;
@@ -314,42 +314,48 @@ body {
 }
 
 #footer #foot {
+    padding: 25px;
     height: 50%;
     width: 100%;
-    background-color: black;
-} */
-
-.footer {
-    background-color: #f6e822;
-    padding: 3rem 4vw;
+    color: white;
     font-family: Gilroy;
+    background-color: black;
 }
 
-.footer-columns {
+#footer-columns {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 2rem;
 }
 
-.footer-left {
-    font-weight: 500;
-    font-size: 0.95rem;
+#footer-columns a{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
 }
 
-.footer-links {
+
+#footer-left p {
+    font-weight: 500;
+    font-size: 0.95rem;
+    font-family: Gilroy;
+}
+
+#footer-links {
     display: flex;
     gap: 4rem;
     flex-wrap: wrap;
 }
 
-.footer-links div p {
+#footer-links div p {
     margin: 0.2rem 0;
     font-family: Gilroy;
 }
 
-.footer-links a {
-    color: black;
+#footer-links a {
+    color: white;
     text-decoration: none;
     font-weight: 500;
     font-family: Gilroy;
@@ -369,6 +375,7 @@ body {
     font-size: 1rem;
     padding: 0.5rem 0;
     flex: 1;
+    color: white;
 }
 
 .footer-subscribe button {
@@ -377,4 +384,12 @@ body {
     font-size: 1.2rem;
     cursor: pointer;
     padding: 0 0.5rem;
+    color: white;
+}
+
+#email p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: Gilroy;
 }
